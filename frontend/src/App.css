@@ -1,0 +1,386 @@
+.top {
+    height: 76px;
+    background: #fff;
+    border-bottom: 1px solid #e8ebf2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 clamp(20px, 6vw, 90px);
+    position: sticky;
+    top: 0;
+    z-index: 3
+}
+
+.brand {
+    font: 800 27px Manrope, sans-serif;
+    color: #2857d9;
+    letter-spacing: -1px
+}
+
+.top nav {
+    display: flex;
+    gap: 24px;
+    align-items: center
+}
+
+.top nav a,
+.linkbtn {
+    color: #354057;
+    font-weight: 600;
+    font-size: 14px
+}
+
+.linkbtn {
+    border: 0;
+    background: none;
+    cursor: pointer
+}
+
+.hero,
+.page {
+    max-width: 1120px;
+    margin: auto;
+    padding: 64px 24px 80px
+}
+
+.hero {
+    padding-top: 86px
+}
+
+.eyebrow {
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    color: #315bd1;
+    margin-bottom: 14px
+}
+
+.hero h1 {
+    font: 800 clamp(40px, 6vw, 68px) Manrope, sans-serif;
+    letter-spacing: -2px;
+    line-height: 1.08;
+    margin: 0;
+    max-width: 700px
+}
+
+.hero h1 span {
+    color: #315bd1
+}
+
+.hero>p {
+    font-size: 18px;
+    color: #697386;
+    max-width: 600px;
+    line-height: 1.7
+}
+
+.actions {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 24px 0
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 0;
+    border-radius: 10px;
+    background: #2857d9;
+    color: white;
+    padding: 13px 20px;
+    font-weight: 700;
+    cursor: pointer
+}
+
+.btn:hover {
+    background: #1945bd;
+    transform: translateY(-1px)
+}
+
+.btn.secondary {
+    background: white;
+    color: #2857d9;
+    border: 1px solid #dbe2f0
+}
+
+.full {
+    width: 100%
+}
+
+.featuregrid,
+.modulegrid,
+.stats,
+.recordgrid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 16px
+}
+
+.featuregrid {
+    margin-top: 54px
+}
+
+.feature,
+.stat,
+.module,
+.record,
+.panel {
+    background: #fff;
+    border: 1px solid #e6eaf2;
+    border-radius: 16px;
+    padding: 22px;
+    box-shadow: 0 8px 24px #25304b08
+}
+
+.feature b {
+    font-size: 25px
+}
+
+.feature h3,
+.module h3 {
+    margin: 12px 0 7px
+}
+
+.feature p,
+.module p,
+.muted {
+    color: #737d90;
+    line-height: 1.6;
+    font-size: 14px
+}
+
+.page h1 {
+    font: 800 36px Manrope, sans-serif;
+    letter-spacing: -1px;
+    margin: 8px 0
+}
+
+.page h2 {
+    font: 700 22px Manrope, sans-serif;
+    margin: 36px 0 16px
+}
+
+.stats {
+    margin: 28px 0 38px
+}
+
+.stat span {
+    color: #68748a;
+    font-size: 13px
+}
+
+.stat strong {
+    display: block;
+    font: 800 32px Manrope;
+    margin-top: 10px
+}
+
+.module {
+    display: block;
+    color: #172033;
+    min-height: 130px
+}
+
+.module:hover {
+    border-color: #aebff7;
+    transform: translateY(-2px)
+}
+
+.authwrap {
+    min-height: calc(100vh - 140px);
+    display: grid;
+    place-items: center;
+    padding: 40px 18px
+}
+
+.auth {
+    width: min(100%, 480px);
+    padding: 34px
+}
+
+.auth h1 {
+    font: 800 34px Manrope;
+    margin: 8px 0 24px
+}
+
+.auth label,
+.dataform label {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-weight: 600;
+    font-size: 13px;
+    margin-bottom: 15px
+}
+
+.auth input,
+.dataform input,
+.dataform textarea {
+    width: 100%;
+    border: 1px solid #dce2ed;
+    border-radius: 9px;
+    background: #fff;
+    padding: 12px 13px;
+    outline: none
+}
+
+.auth input:focus,
+.dataform input:focus,
+.dataform textarea:focus {
+    border-color: #5578e3;
+    box-shadow: 0 0 0 3px #2857d918
+}
+
+.auth-footer,
+.auth .muted {
+    text-align: center;
+    margin-bottom: 0
+}
+
+.error {
+    color: #c22f42;
+    background: #fff1f2;
+    padding: 10px 12px;
+    border-radius: 8px;
+    font-size: 13px
+}
+
+.dataform {
+    margin-top: 24px
+}
+
+.dataform h2 {
+    margin: 0 0 20px
+}
+
+.formgrid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0 16px
+}
+
+.dataform textarea {
+    min-height: 90px;
+    resize: vertical
+}
+
+.recordgrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr))
+}
+
+.record h3 {
+    margin: 0 0 12px
+}
+
+.record p {
+    font-size: 13px;
+    color: #647087;
+    overflow-wrap: anywhere
+}
+
+.smallbtn {
+    background: #edf2ff;
+    color: #254fc5;
+    border: 0;
+    border-radius: 7px;
+    padding: 8px 10px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 12px
+}
+
+.profile {
+    max-width: 650px;
+    margin-top: 24px
+}
+
+.profile p {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+    border-bottom: 1px solid #edf0f5;
+    padding: 10px 0
+}
+
+.profile p:last-child {
+    border: 0
+}
+
+footer {
+    text-align: center;
+    background: #17264b;
+    color: #dfe6ff;
+    padding: 22px;
+    font-size: 12px
+}
+
+@media(max-width:760px) {
+    .top {
+        padding: 0 16px
+    }
+
+    .brand {
+        font-size: 22px
+    }
+
+    .top nav {
+        gap: 10px
+    }
+
+    .top nav a,
+    .linkbtn {
+        font-size: 12px
+    }
+
+    .featuregrid,
+    .modulegrid,
+    .stats,
+    .recordgrid {
+        grid-template-columns: 1fr 1fr
+    }
+
+    .hero,
+    .page {
+        padding: 42px 18px 60px
+    }
+
+    .hero {
+        padding-top: 58px
+    }
+
+    .formgrid {
+        grid-template-columns: 1fr
+    }
+
+    .auth {
+        padding: 25px
+    }
+}
+
+@media(max-width:460px) {
+    .top nav {
+        gap: 8px
+    }
+
+    .featuregrid,
+    .modulegrid,
+    .stats,
+    .recordgrid {
+        grid-template-columns: 1fr
+    }
+
+    .brand {
+        font-size: 20px
+    }
+
+    .top {
+        height: 66px
+    }
+
+    .page h1 {
+        font-size: 30px
+    }
+}
